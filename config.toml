@@ -1,3 +1,38 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://sanesecurity.online"
+languageCode = "bg"
+title = "Sane Security Online"
+theme = "kiss"
+
+# Number of posts per page
+Paginate = 5
+enableRobotsTXT = true 
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = false # Adds OpenGraph and Twitter cards
+homeTitle = "" # Title for home page
+poweredby = true # Adds powered by Hugo and Kiss below Copyright section
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+
+[params.social]
+
+twitter = ""
+github = ""
+email = ""
+linkedin = ""
+facebook = ""
+instagram = ""
+codepen = ""
+
+[blackfriday]
+hrefTargetBlank = true
