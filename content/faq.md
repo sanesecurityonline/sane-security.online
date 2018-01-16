@@ -2,9 +2,11 @@
 title: "ЧЗВ"
 date: 2018-01-13T16:00:18+02:00
 slug: faq
+faq: true
 categories:
  - "permanent"
 draft: false
+notoc: true
 ---
 
 ## Какво е това?
