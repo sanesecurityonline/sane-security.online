@@ -2,6 +2,7 @@ baseurl = "https://sanesecurity.online"
 languageCode = "bg"
 title = "Sane Security Online"
 theme = "kiss"
+enableGitInfo = true
 
 # Number of posts per page
 Paginate = 5

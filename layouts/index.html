@@ -1,27 +1,35 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
 <section class="section">
-  <div class="container">
+<div class="container">
     {{ range sort .Paginator.Pages }}
     {{ if not .Params.notoc }}
     <article>
-      <h2 class="subtitle is-6">{{ .Date.Format "January 2, 2006" }}</h2>
-      <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>
-      <div class="content">
+    <h1 class="title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ if .Draft }} ::Draft{{ end }}
+    </h1>
+    <h2 class="subtitle is-6">
+        Публикувано на {{ .Date.Format "2006-01-02" }}
+        {{ if not (.Lastmod.Equal (.Date) ) }}
+        || Последна промяна на {{ .Lastmod.Format "2006-01-02" }}
+        {{ end }}
+    </h2>
+    <div class="content">
         {{ .Summary | plainify | safeHTML }}
         {{ if .Truncated }}
         <a class="button is-link" href="{{ .Permalink }}" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
+            Read more
+            <span class="icon is-small">
+                <i class="fa fa-angle-double-right"></i>
+            </span>
         </a>
         {{ end }}
-      </div>
+    </div>
     </article>
     {{ end }}
     {{ end }}
-  </div>
+</div>
 </section>
 {{ partial "pager" . }}
 {{ partial "footer" . }}
