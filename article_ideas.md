@@ -5,3 +5,5 @@
 
  * ransomware
  * social engineering
+ * 2FA: Популярни услуги и как го имплементират. Банки.
+ * Full-disk encryption: Как се прави за популярните ОС.
