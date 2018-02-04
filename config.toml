@@ -2,6 +2,7 @@ baseurl = "https://xn----7sbanriziekmikfpeh.online/"
 languageCode = "bg"
 title = "Разумна Сигурност Online"
 theme = "kiss"
+enableGitInfo = true
 
 # Number of posts per page
 Paginate = 5

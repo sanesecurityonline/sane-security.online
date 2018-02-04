@@ -1,0 +1,26 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<section class="section">
+<div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+        {{ if .Params.tags }}
+        {{ partial "tags" .Params.tags }}
+        {{ end }}
+    </div>
+    <h1 class="title">{{ .Title }}</h1>
+    <h2 class="subtitle is-6">
+        Публикувано на {{ .Date.Format "2006-01-02" }}
+        {{ if not (.Lastmod.Equal (.Date) ) }}
+        || Последна промяна на {{ .Lastmod.Format "2006-01-02" }}
+        {{ end }}
+    </h2>
+    <div class="content">
+        {{ .Content }}
+    </div>
+    {{ if and (.Site.Params.Info.adsense)  (.Params.adsenseBottom) }}
+    {{ partial "adsense" . }}
+    {{ end}}
+</div>
+</section>
+{{ partial "disqus" . }}
+{{ partial "footer" . }}
