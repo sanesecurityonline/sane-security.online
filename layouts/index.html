@@ -5,10 +5,10 @@
     {{ range sort .Paginator.Pages }}
     {{ if not .Params.notoc }}
     <article>
-    <h1 class="title">
+    <h2 class="title">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
         {{ if .Draft }} ::Draft{{ end }}
-    </h1>
+    </h2>
     <h2 class="subtitle is-6">
         Публикувано на {{ .Date.Format "2006-01-02" }}
         {{ if not (.Lastmod.Equal (.Date) ) }}
