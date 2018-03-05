@@ -13,7 +13,7 @@ draft: true
 как изглежда въпросното писмо:
 
 <a target="_blank" href="/images/epay-phishing.png">
-![epay-phishing](/images/epay-phishing.png)</a>
+![epay-phishing](/images/a-phishing-example/epay-phishing.png)</a>
 
 
 ## Как можем да се досетим?
@@ -69,7 +69,7 @@ draft: true
 показва в браузъра е възможно да се подлъжем много лесно.
 
 <a target="_blank" href="/images/epay-fake.png">
-![epay-fake](/images/epay-fake.png)</a>
+![epay-fake](/images/a-phishing-example/epay-fake.png)</a>
 
 Докато подготвяхме тази статия крайния URL, от който се сервираше копието се
 промени. Тъй като домейните, от които се сервира копието на epay изглежда са
