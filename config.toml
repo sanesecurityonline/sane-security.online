@@ -13,7 +13,7 @@ customCSS = ["css/custom.css"]
 
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
-enableSocial = false # Adds OpenGraph and Twitter cards
+enableSocial = true # Adds OpenGraph and Twitter cards
 homeTitle = "Разумна Сигурност Online" # Title for home page
 poweredby = true # Adds powered by Hugo and Kiss below Copyright section
 
