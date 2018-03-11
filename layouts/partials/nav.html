@@ -8,13 +8,20 @@
         <nav class="nav-item level is-mobile">
           {{ if .IsHome }}
             <a class="level-item" href="/faq">ЧЗВ/FAQ</a>
+            <a class="level-item" href="/index.xml" target='_blank' rel='noopener'>
+              <span class="icon">
+                <i class>
+                  {{- partial "svg/icons" "rss" -}}
+                </i>
+              </span>
+            </a>
           {{ end }}
           {{- range $platform, $username := .Site.Params.social -}}
           {{- if $username -}}
             <a class="level-item" href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
             <span class="icon">
               <i class>
-                {{- partial "svg/icons" $platform -}}                
+                {{- partial "svg/icons" $platform -}}
               </i>
             </span>
           </a>
