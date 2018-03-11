@@ -15,5 +15,8 @@
 {{- range .Site.Params.Assets.customCSS -}}
 <link rel='stylesheet' href='{{ . | relURL }}'>
 {{- end -}}
+{{ range .AlternativeOutputFormats -}}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">
+{{ end -}}
 </head>
 <body>
