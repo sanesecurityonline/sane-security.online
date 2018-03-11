@@ -23,12 +23,11 @@ appID = ""
 pageID = ""
 
 [params.opengraph.twitter]
-page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+page = "saneseconline" # Twitter Page username. If not set, params.social.twitter will be used.
 
 [params.social]
-
-twitter = ""
-github = ""
+twitter = "saneseconline"
+github = "sanesecurityonline"
 email = ""
 linkedin = ""
 facebook = ""
