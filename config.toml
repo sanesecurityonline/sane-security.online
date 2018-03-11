@@ -6,7 +6,7 @@ enableGitInfo = true
 
 # Number of posts per page
 Paginate = 5
-enableRobotsTXT = true 
+enableRobotsTXT = true
 
 [params.assets]
 customCSS = ["css/custom.css"]
