@@ -14,7 +14,7 @@ customCSS = ["css/custom.css"]
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
 enableSocial = false # Adds OpenGraph and Twitter cards
-homeTitle = "" # Title for home page
+homeTitle = "Разумна Сигурност Online" # Title for home page
 poweredby = true # Adds powered by Hugo and Kiss below Copyright section
 
 [params.opengraph.facebook]
