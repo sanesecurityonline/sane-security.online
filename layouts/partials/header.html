@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" {{ with .Site.LanguageCode }} lang="{{ . }}"{{ end }}>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+{{ if eq .IsHome false }}
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{ else }}
+<title>{{ .Site.Params.Info.homeTitle }}</title>
+{{ end }}
+{{ if .Site.Params.Info.enableSocial }}
+{{- partial "social/opengraph" . -}}
+{{ end }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css"/>
+{{- range .Site.Params.Assets.customCSS -}}
+<link rel='stylesheet' href='{{ . | relURL }}'>
+{{- end -}}
+</head>
+<body>
