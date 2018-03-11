@@ -12,10 +12,10 @@ enableRobotsTXT = true
 customCSS = ["css/custom.css"]
 
 [params.info]
-adsense = "" # Adsense ID (ID only, without ca-pub-)
-enableSocial = true # Adds OpenGraph and Twitter cards
+adsense = ""                           # Adsense ID (ID only, without ca-pub-)
+enableSocial = true                    # Adds OpenGraph and Twitter cards
 homeTitle = "Разумна Сигурност Online" # Title for home page
-poweredby = true # Adds powered by Hugo and Kiss below Copyright section
+poweredby = true                       # Adds powered by Hugo and Kiss below Copyright section
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
