@@ -19,10 +19,7 @@
         {{ .Summary | plainify | safeHTML }}
         {{ if .Truncated }}
         <a class="button is-link" href="{{ .Permalink }}" style="height:28px">
-            Read more
-            <span class="icon is-small">
-                <i class="fa fa-angle-double-right"></i>
-            </span>
+            [към пълната статия &raquo;]
         </a>
         {{ end }}
     </div>
