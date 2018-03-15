@@ -6,16 +6,16 @@ enableGitInfo = true
 
 # Number of posts per page
 Paginate = 5
-enableRobotsTXT = true 
+enableRobotsTXT = true
 
 [params.assets]
 customCSS = ["css/custom.css"]
 
 [params.info]
-adsense = "" # Adsense ID (ID only, without ca-pub-)
-enableSocial = false # Adds OpenGraph and Twitter cards
-homeTitle = "" # Title for home page
-poweredby = true # Adds powered by Hugo and Kiss below Copyright section
+adsense = ""                           # Adsense ID (ID only, without ca-pub-)
+enableSocial = true                    # Adds OpenGraph and Twitter cards
+homeTitle = "Разумна Сигурност Online" # Title for home page
+poweredby = true                       # Adds powered by Hugo and Kiss below Copyright section
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
@@ -23,12 +23,11 @@ appID = ""
 pageID = ""
 
 [params.opengraph.twitter]
-page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+page = "saneseconline" # Twitter Page username. If not set, params.social.twitter will be used.
 
 [params.social]
-
-twitter = ""
-github = ""
+twitter = "saneseconline"
+github = "sanesecurityonline"
 email = ""
 linkedin = ""
 facebook = ""
