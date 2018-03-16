@@ -17,6 +17,8 @@ enableSocial = true                    # Adds OpenGraph and Twitter cards
 homeTitle = "Разумна Сигурност Online" # Title for home page
 poweredby = true                       # Adds powered by Hugo and Kiss below Copyright section
 
+description = "Сигурността онлайн не бива да е само за специалисти. Разумно ниво на сигурност може да се постигне от всеки, със сравнително минимални усилия."
+
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
 appID = ""
