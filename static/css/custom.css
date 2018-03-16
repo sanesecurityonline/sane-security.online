@@ -1,6 +1,11 @@
+/* Use best native font for the system */
 body,button,input,select,textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+/* Bolder headings, bordered section titles */
 h1.title {
   font-weight: 500;
 }
@@ -9,14 +14,18 @@ h1.title {
   border-bottom: 2px solid #B52323;
   padding-bottom: 10px;
 }
+
+/* Reduce spacing between sections */
 .content h2:not(:first-child) {
   margin-top: 50px;
 }
 
+/* Reduce margin of hr used as a separator */
 hr {
   margin: 30px 0;
 }
 
+/* Subtler "read more" link */
 .content .button.is-link {
   padding: 0;
   color: #52565c;
