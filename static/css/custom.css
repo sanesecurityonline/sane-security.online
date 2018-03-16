@@ -16,3 +16,13 @@ h1.title {
 hr {
   margin: 30px 0;
 }
+
+.content .button.is-link {
+  padding: 0;
+  color: #52565c;
+}
+.content .button.is-link:focus,
+.content .button.is-link:hover {
+  background-color: transparent;
+  color: #222324;
+}
