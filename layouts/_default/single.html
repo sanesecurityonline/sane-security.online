@@ -21,6 +21,7 @@
     {{ partial "adsense" . }}
     {{ end}}
 
+    {{ if not (eq .URL "/faq/") }}
     <div class="contact">
       <p>
         Ако имате коментари по статията или предложение за подобрения, може да
@@ -32,6 +33,7 @@
 
       <p>Можете и да ни пишете мейл на <a href="mailto:contact@sanesecurity.online">contact@sanesecurity.online</a>.</p>
     </div>
+    {{end}}
 </div>
 </section>
 
