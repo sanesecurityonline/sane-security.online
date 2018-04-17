@@ -20,7 +20,20 @@
     {{ if and (.Site.Params.Info.adsense)  (.Params.adsenseBottom) }}
     {{ partial "adsense" . }}
     {{ end}}
+
+    <div class="contact">
+      <p>
+        Ако имате коментари по статията или предложение за подобрения, може да
+        отворите pull request или issue в GitHub:
+        <a href="https://github.com/sanesecurityonline/sane-security.online">https://github.com/sanesecurityonline/sane-security.online</a>.
+      </p>
+
+      <br>
+
+      <p>Можете и да ни пишете мейл на <a href="mailto:contact@sanesecurity.online">contact@sanesecurity.online</a>.</p>
+    </div>
 </div>
 </section>
+
 {{ partial "disqus" . }}
 {{ partial "footer" . }}

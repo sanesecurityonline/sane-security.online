@@ -35,3 +35,10 @@ hr {
   background-color: transparent;
   color: #222324;
 }
+
+/* section with contact info */
+.container .contact {
+  background: #efefef;
+  padding: 20px;
+  margin-top: 40px;
+}
