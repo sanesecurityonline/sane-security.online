@@ -42,3 +42,9 @@ hr {
   padding: 20px;
   margin-top: 40px;
 }
+
+/* Drop right navigation on separate row on mobile */
+@media screen and (max-width: 48em) {
+  .nav { display: block; }
+  .nav-right .nav-item { display: block; text-align: right; }
+}
